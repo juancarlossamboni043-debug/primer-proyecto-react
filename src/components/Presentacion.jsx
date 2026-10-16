@@ -1,15 +1,16 @@
 function Presentacion(){
     return(
         <article className='presentacion'>
-            <h1>hola , soy juan carlos samboni</h1>
-            <p>vivo en el barrio boyaca </p>
+            <h1>hola , soy {usuario.nombre}</h1>
+            <p>vivo en {usuario.ubicacion} </p>
             <h3>Mis datos son </h3>
             <ul>
                 <>
-                <li>telefono 312455678</li>
+                <li>{usuario.correo}</li>
+                <li>{usuario.telefono}</li>
                 </>
             </ul>
-            <h3>soy desarrollador FullStack </h3>
+            <h3> </h3>
             <nav>
                 <a href=""></a>
             </nav>
