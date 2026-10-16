@@ -1,4 +1,4 @@
-function Presentacion(){
+function Presentacion({usuario}){
     return(
         <article className='presentacion'>
             <h1>hola , soy {usuario.nombre}</h1>
