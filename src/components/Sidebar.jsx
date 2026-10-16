@@ -1,8 +1,8 @@
 function Sidebar(){
     return (
         <aside className="sidebar">
-            <h3 className="sidebar-titulo">Menu</h3>
             <div>
+               <h3 className="sidebar-titulo">Menu</h3>          
                 <nav>
                     <ul className="sidebar-menu">
                         <li><a href="#">🏠 inicio</a></li>
