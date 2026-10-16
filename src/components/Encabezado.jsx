@@ -1,18 +1,12 @@
 import  Menusuario  from "./Menusuario"
-
-
-function Encabezado(){
+function Encabezado({usuario}){
     return(
         <header className="encabezado">
             <div className="encabezado-marca">
-            <h1>Mi primer app con react </h1>
-            <nav>
-                <a href="#">inicio</a>
-                <a href="#">tecnologo</a>
-                <a href="#">contacto</a>
-            </nav>
+                <span className="encabezado-logo">⚛️</span>
+            <h1>Mi dashboard </h1>
             </div>
-            <Menusuario />
+            <Menusuario usuario={usuario}/>
 
         </header>
     )

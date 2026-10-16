@@ -4,17 +4,23 @@ import Sidebar from './components/Sidebar.jsx';
 import Presentacion from './components/Presentacion';
 import Tarjeta from './components/Tarjeta.jsx'
 import PiePagina from './components/PiePagina.jsx'
-
+import fotoperfil from './images/foto.jpg'
 
 function App() {
   const programa = "Analisis y Desarrollo de Software";
+  const usuario ={
+    nombre:'juan carlos samboni ',
+    rol:'Aprendiz ADSO',
+    foto:fotoperfil,
+    correo: 'juancarlossamboni043@gmail.com'
+  }
 
   return (
     <>
     <div className="app-padre">
-      <Encabezado />
+      <Encabezado usuario={usuario} />
       <div className="app-layout">
-        <Sidebar />
+        <Sidebar usuario={usuario} />
         <main className="contenido">
           <h2>Bienvenido al Programa {programa}</h2>
           <Presentacion />

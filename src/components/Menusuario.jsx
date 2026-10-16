@@ -1,16 +1,12 @@
-import fotoPerfil from '../images/foto.jpg'
-
-function Menusuario(){
-    const nombre = 'Juan Carlos Samboni'
-    const rol = 'instructor ADSO'
+function Menusuario({usuario}){
 
     return(
         <div className='menu-usuario'>
             <button type='button'className='menu-usuario-boton'>
-                <img src={fotoPerfil} alt={`foto de ${nombre}`} className='avatar' />
+                <img src={usuario.foto} alt={`foto de ${usuario.nombre}`} className='avatar' />
                 <span className='menu-usuario-datos'>
-                    <span className='menu-usuario-nombre'>{nombre}</span>
-                    <span className='menu-usuario-nombre'>{rol}</span>
+                    <span className='menu-usuario-nombre'>{usuario.nombre}</span>
+                    <span className='menu-usuario-rol'>{usuario.rol}</span>
                 </span>
                 <span className='flecha'>↓</span>
             </button>
